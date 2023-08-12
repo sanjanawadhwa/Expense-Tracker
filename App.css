@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* user defined color */
+:root{
+  --color-yellow: #f9c74f;
+  --color-purple: #9d4edd;
+}
+
+/* To apply font to whole body */
+*>*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(254, 254, 254);
+}
+
+.App {
+  text-align: center;
+  padding: 2em 0;
+  background-color: rgb(45, 67, 67);
+}
+
+.text-4xl{
+  line-height: 3rem;
+}
+
+.container1{
+  margin-bottom: 35px;
+}
+
+/* // var() is used by developer, this cannot be used in predefined elements */
+.bg-yellow{
+  background-color: var(--color-yellow);
+}
+.bg-purple{
+  background-color: var(--color-purple);
+}
+
+.chart .title{
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-input{
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm
+}
